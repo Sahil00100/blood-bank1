@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-inverse fixed-top">
+        <a class="navbar-brand" href="#">Donate Blood</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active ">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+           
+           
+             
+            
+            
+          </ul>
+          
+        </div>
+      </nav>
+
+<br><br><br><br><br><br><br>
+
+<div class="col-lg-7 mx-auto ">  
+    <div class="card mt-2 mx-auto p-4 bg-light d-flex justify-content-center">
+        <div class="">
+            <div class="container d-flex justify-content-center">
+              
+                    <div class="">
+                       
+                        <div class="row ">
+                            <div class="col-md-5">
+                                <a class="btn btn-outline-success btn-lg" href="{% url 'person' %}">Person</a>
+                            </div>
+                            <div class="col-md-2">
+                                <p>OR</p>
+                            </div>
+                            
+                            
+                            <div class="col-md-5">
+                                <a class="btn btn-outline-success btn-lg" href="{% url 'bloodbank' %}">Blood Bank</a>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+            
+            </div>
+        </div>
+    </div> <!-- /.8 -->
+</div> <!-- /.row-->
+</body>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</html>

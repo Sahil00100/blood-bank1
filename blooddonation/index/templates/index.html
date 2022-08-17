@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+</head>
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-inverse fixed-top">
+        <a class="navbar-brand" href="#">Donate Blood</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active ">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+           
+           
+             
+            
+            
+          </ul>
+          <a class="btn btn-danger" href="{% url 'list' %}">Give Blood</a>
+        </div>
+      </nav>
+
+<section class="sec-1">
+    
+    
+<div class="img1 ">
+    
+    
+    <img class="img-fluid" src="{% static 'img/bg4.jpg' %}"   alt="">
+    <div class="centered"><h1>Be a Hero.Save a Soul.</h1><br><form class="form-inline my-2 my-lg-0 col-lg-12" method="post">{% csrf_token %}
+       
+        <select class="form-control input-lg w-30 " name='blood' >
+            <option>A+</option>
+            <option>O+</option>
+            <option>B+</option>
+            <option>AB+</option>
+            <option>A-</option>
+            <option>O-</option>
+            <option>B-</option>
+            <option>AB-</option>
+            
+          </select>
+        
+        <select class="form-control ml-3" name='district'>
+            <option>Alappuzha</option>
+            <option>Ernakulam</option>
+            <option>Idukki</option>
+            <option>Kannur</option>
+            <option>Kasaragod</option>
+            <option>Kollam</option>
+            <option>Kottayam</option>
+            <option>Kozhikode</option>
+            <option>Malappuram</option>
+            <option>Palakkad</option>
+            <option>Pathanamthitta</option>
+            <option>Thiruvananthapuram</option>
+            <option>Thrissur</option>
+            <option>Wayanad</option>
+          
+          </select>
+        <button class="btn btn-success my-2 my-sm-0 ml-3" type="submit">Search</button>
+      </form></div>
+   
+
+</div>
+
+
+</section>
+
+<section class="sec-0">
+    <br><br><br><br>    
+    <div class="container">
+        <div class="head">
+            <h1 class="head-text">Do You Want To Join Our Donor Family</h1>
+            <a class="btn btn-outline-success btn-lg" href="{% url 'middle' %}">Join</a>
+            
+        </div>
+    </div>
+</section>
+<!--section-2--><br><br>
+
+<section class="sec-2">
+    <div class="container">
+        <div class="head">
+            <h1 class="head-text">Why it's done ?</h1>
+            <p class="head-text">Millions of people need blood transfusions each year. Some may need blood during surgery. Others depend on it after an accident or because they have a disease that requires blood components. Blood donation makes all of this possible. There is no substitute for human blood — all transfusions use blood from a donor.</p>
+            <h1 class="head-text">Risks</h1>
+            <p class="head-text">Blood donation is safe. New, sterile disposable equipment is used for each donor, so there's no risk of contracting a bloodborne infection by donating blood.
+
+                If you're a healthy adult, you can usually donate a pint (about half a liter) of blood without endangering your health. Within a few days of a blood donation, your body replaces the lost fluids. And after two weeks, your body replaces the lost red blood cells.</p>
+                <h1 class="head-text">Eligibility requirements</h1>
+                <p >To be eligible to donate whole blood, plasma or platelets, you must be:</p>
+                <ul >
+                    <li >In good health.</li>
+                    <li >At least 16 or 17 years old, depending on the law in your state. Some states allow legal minors to donate with parent permission. While there's no legal upper age limit, policies may vary between individual donor centers.</li>
+                    <li>At least 110 pounds (about 50 kilograms).</li>
+                    <li>Able to pass the physical and health-history assessments.</li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+<section class="sec-3">
+    <br><br>
+    <div class="container">
+        <div class="head">
+            <h1 class="head-text">Food and medications</h1>
+            <p class="head-text">Before your blood donation:</p>
+            
+                <ul >
+                    <li >Get plenty of sleep the night before you plan to donate.</li>
+                    <li >Eat a healthy meal before your donation. Avoid fatty foods, such as a hamburger, fries or ice cream.</li>
+                    <li>Drink plenty of water before the donation</li>
+                    <li>Check to see if any medications you are taking or recently took would prevent you from donating. For example, if you are a platelet donor, you must not take aspirin for two days prior to donating. Talk to your doctor before discontinuing any medications.</li>
+                    <li>Wear a shirt with sleeves that can be rolled up.</li>
+                </ul>
+                <h1 class="head-text">COVID-19 concerns</h1>
+                <p class="head-text">The virus that causes coronavirus disease 2019 (COVID-19) hasn't been shown to be transmitted through blood transfusions. However, the U.S. Food and Drug Administration suggests waiting to donate blood for at least 14 days after a positive diagnostic test for COVID-19 without symptoms or for at least 14 days after symptoms of COVID-19 have completely cleared up. Those who have tested positive for COVID-19 antibodies but didn't have a diagnostic test and never developed symptoms can donate without a waiting period or having a diagnostic test done before donation.
+
+                    If you get a nonreplicating, inactivated or mRNA-based COVID-19 vaccine, you can donate blood without a waiting period. However, if a live attenuated viral COVID-19 vaccine becomes available and you get it, wait 14 days after being vaccinated before donating blood. If you aren't sure what type of vaccine you got, wait 14 days before donating blood.</p>
+        </div>
+    </div>
+</section>
+
+<section class="sec-4">
+    <img src="{% static 'img/chart.jpg' %}" alt="">
+</section>
+<br><br><br><br>
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    
+    
+  </footer><!-- End Footer -->
+    <!--js-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
